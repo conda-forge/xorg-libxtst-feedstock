@@ -31,6 +31,7 @@ requirements:
     - gnuconfig  # [unix]
     - {{ stdlib('c') }}          # [unix]
     - {{ compiler('c') }}        # [unix]
+    - {{ stdlib('m2w64_c') }}    # [win]
     - {{ compiler('m2w64_c') }}  # [win]
     - make   # [unix]
   host:
