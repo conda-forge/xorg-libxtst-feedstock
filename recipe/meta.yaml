@@ -1,8 +1,8 @@
 {% set xorg_name = "libXtst" %}
 {% set xorg_category = "lib" %}
 {% set name = "xorg-" ~ xorg_name %}
-{% set version = "1.2.5" %}
-{% set sha256 = "244ba6e1c5ffa44f1ba251affdfa984d55d99c94bb925a342657e5e7aaf6d39c" %}
+{% set version = "1.2.6" %}
+{% set sha256 = "f30f2d4f8370077de9f35220a539bf34c042ca02a55669a4d8f345c661ce7839" %}
 {% set am_version = "1.16" %} # keep synchronized with build.sh
 
 package:
@@ -15,7 +15,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   run_exports:
     - {{ pin_subpackage(name|lower) }}
 
